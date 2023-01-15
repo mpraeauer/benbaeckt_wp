@@ -1,0 +1,21 @@
+@include breakpoint($desktop){
+    .visible_mobile{
+        display: none;
+    }
+    .visible_desktop{
+        display: block;
+    }
+}
+@include breakpoint(0, $mobile) {
+    #mainnav {
+        position: fixed;
+        right: 0;
+        top: 0;
+    }
+    .visible_mobile{
+        display: block;
+    }
+    .visible_desktop{
+        display: none;
+    }
+}

@@ -1,0 +1,152 @@
+@include breakpoint($desktop){
+
+    header {
+        
+        #hero{
+            height: 100vh;
+            background-image: url("../images/header_image.jpg");
+            background-repeat: no-repeat;
+            background-size:cover;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            margin-bottom: 30px;
+        }
+
+        #background{
+            background-color: #311A0D6a;
+            height: 100%;
+            width: 100%;
+
+        }
+    
+        .box {
+            position: relative;
+            margin-left: -60%;
+            margin-top: 20%;
+            text-align: center;
+
+
+            h2 { 
+                margin-bottom: 3vh;
+                color: white;
+                line-height: 72px;
+                font-size: 100px;
+
+                .uppercase {
+                    text-transform: uppercase;
+                    color: #40BF75;
+                    font-weight: 400;
+                    font-size: 220px;
+                  }
+            }
+            h2::before,
+            h2::after {
+            border-top: none; 
+            }
+        
+            p{
+                color: white;
+                font-weight: 200;
+                font-size: 18px;
+                letter-spacing: 2px;
+            }
+        }
+        a{
+            text-decoration: none;
+        }
+        ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: right;
+            margin-right: 15px;
+            gap: 45px;
+            margin-top: -34.5px;
+            
+          }
+          li a {
+            color: #40BF75;
+            margin: 20px 0px 20px 0px;
+            text-transform: uppercase;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 200;
+          }
+      }
+
+}
+
+@include breakpoint(0,$mobile){
+    
+    header {
+        #hero{
+            height: 100vh;
+            background-image: url("../images/header_image.jpg");
+            background-repeat: no-repeat;
+            background-size:cover;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            margin-bottom: 30px;
+            background-position: center;
+        }
+     
+
+        #background{
+            background-color: #311A0D6a;
+            height: 100%;
+            width: 100%;
+
+        }
+    
+        .box {
+            position: relative;
+            margin-top: 55%;
+            text-align: center;
+
+
+            h2 { 
+                margin-bottom: 3vh;
+                color: white;
+                line-height: 45px;
+                font-size: 60px;
+
+                .uppercase {
+                    text-transform: uppercase;
+                    color: #40BF75;
+                    font-weight: 400;
+                    font-size: 100px;
+                  }
+            }
+            h2::before,
+            h2::after {
+            border-top: none; 
+            }
+        
+            p{
+                color: white;
+                font-weight: 200;
+                font-size: 18px;
+                letter-spacing: 2px;
+            }
+        }
+        a{
+            text-decoration: none;
+        }
+        ul {
+            display: flex;
+            flex-direction: column;
+            justify-content: right; 
+          }
+          li a {
+            color: #40BF75;
+            margin: 20px 0px 20px 0px;
+            text-transform: uppercase;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 200;
+
+            
+          }
+      }
+}

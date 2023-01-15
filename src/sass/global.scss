@@ -1,0 +1,259 @@
+@include breakpoint($desktop) {
+  //--- GENERAL ---
+  body {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+
+    //--- FONTS ---
+  
+    h1 {
+      padding-left: 15px;
+      padding-top: 15px;
+      color: #40BF75;
+      font-size: 18px;
+      font-family: 'Source Sans Pro', sans-serif;
+      font-style: normal;
+      font-weight: 200;
+      text-decoration: none;
+
+      .uppercase {
+        text-transform: uppercase;
+      }
+    }
+    h2 {
+      color: #40BF75;
+      font-family: 'Source Sans Pro', sans-serif;
+      font-style: normal;
+      font-weight: 200;
+      font-size: 40px;
+      margin-bottom: 40px;    
+    }
+    h3 {
+      color: white;
+      margin-bottom: 15px;
+      font-family: 'Source Sans Pro', sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 28px;
+      line-height: 44px;
+      letter-spacing: 1px;
+    }
+    h4{
+      color: #40BF75;
+      text-transform: uppercase;
+      font-weight: 600;
+      font-size: 24px;
+      margin-bottom: 50px;
+    }
+    .super-headline {
+      color: #654F3C;
+      text-transform: uppercase;
+      font-size: 18px;
+      font-family: 'Source Sans Pro', sans-serif;
+      font-style: normal;
+      font-weight: 200;
+      margin-bottom: 0;
+      text-align: center;
+      align-items: center;
+    }
+    p{
+      color: white;
+      font-size: 18px;
+      line-height: 1.6rem; 
+      font-weight: 200;
+      margin-bottom: 15px;
+    }
+    .button{
+      background-color: #40BF75;
+      text-decoration: none;
+      color: white;
+      margin-top: 15px;
+      padding: 10px;
+      padding-left: 25px;
+      padding-right: 25px;
+      border-radius: 7px;
+      font-weight: 400;
+    }
+    .grid{
+      display: grid;
+      width: 100%;
+      grid-template-columns: auto auto auto;
+      grid-template-rows:  auto;
+      grid-template-areas: "grid1 grid2 grid3";
+
+      .grid1{
+        grid-area: grid1;
+        width: 100%; 
+        padding-top: 45px;
+
+        .headerline{
+          display: flex;
+          width: 100%;
+         height: 1%;
+          border-bottom: 1px solid #40BF75;
+          margin-top: auto;
+          align-items: center;  
+        }  
+      }
+      .grid2{
+        grid-area: grid2;
+
+        .gridhelp{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+        }
+      }
+      .grid3{
+        grid-area: grid3;
+        width: 100%; 
+        padding-top: 45px;
+
+        .headerline{
+          display: flex;
+          width: 100%;
+         height: 1%;
+          border-bottom: 1px solid #40BF75;
+          margin-top: auto;
+          align-items: center;  
+        }
+      }
+    }
+  }
+}
+
+@include breakpoint(0,$mobile)  {
+  //--- GENERAL ---
+  body {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+
+    //--- FONTS ---
+
+    h1 {
+      padding-left: 15px;
+      padding-top: 15px;
+      color: #40BF75;
+      font-size: 18px;
+      font-family: 'Source Sans Pro', sans-serif;
+      font-style: normal;
+      font-weight: 200;
+      text-decoration: none;
+
+      .uppercase {
+        text-transform: uppercase;
+      }
+    }
+    h2 {
+      color: #40BF75;
+      font-family: 'Source Sans Pro', sans-serif;
+      font-style: normal;
+      font-weight: 200;
+      font-size: 40px;
+      margin-bottom: 40px;
+      display: inline-block;
+      position: relative;
+      text-align: center;
+    }
+    h3 {
+      color: white;
+      margin-bottom: 15px;
+      font-family: 'Source Sans Pro', sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 28px;
+      line-height: 44px;
+      letter-spacing: 1px;
+    }
+    h4{
+      color: #40BF75;
+      text-transform: uppercase;
+      font-weight: 600;
+      font-size: 24px;
+      margin-bottom: 50px;
+    }
+    .super-headline {
+      color: #654F3C;
+      text-transform: uppercase;
+      font-size: 18px;
+      font-family: 'Source Sans Pro', sans-serif;
+      font-style: normal;
+      font-weight: 200;
+      margin-bottom: 0;
+    }
+    p{
+      color: white;
+      font-size: 18px;
+      line-height: 26px; 
+      font-weight: 200;
+      margin-bottom: 15px;
+    }
+    .button{
+      background-color: #40BF75;
+      text-decoration: none;
+      color: white;
+      margin-top: 15px;
+      padding: 10px;
+      padding-left: 25px;
+      padding-right: 25px;
+      border-radius: 7px;
+      font-weight: 400;
+    }
+    .grid{
+      display: grid;
+      width: 100%;
+      grid-template-columns: auto auto auto;
+      grid-template-rows:  auto;
+      grid-template-areas: "grid1 grid2 grid3";
+
+      .grid1{
+        grid-area: grid1;
+        width: 100%; 
+        padding-top: 45px;
+
+        .headerline{
+          display: flex;
+          width: 100%;
+         height: 1%;
+          border-bottom: 1px solid #40BF75;
+          margin-top: auto;
+          align-items: center;  
+        }  
+      }
+      .grid2{
+        grid-area: grid2;
+        
+        .gridhelp{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+        }
+      }
+      .grid3{
+        grid-area: grid3;
+        width: 100%; 
+        padding-top: 45px;
+
+        .headerline{
+          display: flex;
+          width: 100%;
+         height: 1%;
+          border-bottom: 1px solid #40BF75;
+          margin-top: auto;
+          align-items: center;  
+        }
+      }
+    }
+  }
+ 
+}

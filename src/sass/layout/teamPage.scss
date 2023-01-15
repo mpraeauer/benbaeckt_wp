@@ -1,0 +1,149 @@
+@include breakpoint($desktop){
+
+#teamBackground{
+    background-image: url("../images/team.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-color: rgba(255, 255, 255, 0.9);
+    background-blend-mode: screen;
+    background-position: center;
+    background-attachment: fixed;
+}
+  #teamPage{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-top: 50px;
+
+    .text{
+        margin-bottom: 5vh;
+        align-items: center;
+        justify-content: center;
+        width: 70%;
+        line-height: 1.6rem;
+        padding-left: 0;
+        color: black;
+        text-align: justify;
+    }
+
+    form{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-evenly;
+        padding-bottom: 100px;
+        
+  
+        label{
+          font-family: 'Source Sans Pro', sans-serif;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 18px;
+          
+        }
+        input{
+          background-color: #AF9A88;
+          margin-top: 15px;
+          padding: 10px;
+          padding-left: 25px;
+          padding-right: 25px;
+          border-radius: 7px;
+          margin-bottom: 25px;
+          border:0px;
+          width: 50%;
+        }
+        #submit{
+          background-color: #40BF75;
+          color: white;
+          letter-spacing: 1px;
+        }
+        #ml, #cv{
+          padding-top: 25px;
+          padding-bottom: 25px;
+        }
+      }
+      .formdetail{
+        width: 50%;
+        text-align: center;
+      }
+
+
+}
+}
+
+@include breakpoint(0,$mobile){
+#teamBackground{
+    background-image: url("../images/team.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-color: rgba(255, 255, 255, 0.9);
+    background-blend-mode: screen;
+    background-position: center;
+    background-attachment: fixed;
+}
+#teamPage{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+    margin-bottom: 30px;
+
+    .text{
+        margin-bottom: 5vh;
+        align-items: center;
+        justify-content: center;
+        width: 85%;
+        line-height: 1.6rem;
+        padding-left: 0;
+        color: black;
+        text-align: justify;
+    }
+
+    form{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: space-evenly;
+        padding-bottom: 100px;
+        align-items: center;
+        text-align: center;
+        
+  
+        label{
+          font-family: 'Source Sans Pro', sans-serif;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 18px;
+          
+        }
+        input{
+          background-color: #AF9A88;
+          margin-top: 15px;
+          padding: 10px;
+          border-radius: 7px;
+          margin-bottom: 25px;
+          border:0px;
+          width: 100%;
+        }
+        #submit{
+          background-color: #40BF75;
+          color: white;
+          letter-spacing: 1px;
+        }
+        #ml, #cv{
+          padding-top: 25px;
+          padding-bottom: 25px;
+        }
+      }
+      .formdetail{
+        width: 50%;
+        text-align: center;
+      }
+
+
+}
+
+}

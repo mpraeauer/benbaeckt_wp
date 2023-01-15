@@ -1,0 +1,42 @@
+@include breakpoint(0, $mobile) {
+    // header{
+    //     height: 40vh;
+    // }
+    #mainnav {
+        position: fixed;
+        right: 0;
+        top: 0;
+        width: 100%;
+        background-color: #654F3C;
+        z-index: 88;
+        button{
+            display: block;
+        }
+
+        ul {
+            display: flex;
+            justify-content: center;
+            position: fixed;
+            box-shadow: -5px 0 10px 0 rgb(0 0 0 / 0.1);
+            background-color: #654F3C;
+            height: 100%;
+            width: 100%;
+            z-index: 88;
+            
+            li{
+                text-align: center;
+                margin-top: 24px;
+                margin-bottom: 24px;
+                font-size: 24px;
+            }
+
+            a{
+                color: white;
+                list-style-type: none;
+                text-decoration: none;
+            }
+
+
+        }
+    }
+}
