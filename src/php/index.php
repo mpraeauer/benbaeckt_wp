@@ -99,12 +99,7 @@
             <span class="grid3"><span class="headerline"></span></span>
           </div>
             <div class="container">
-                <?php
-                  $post = get_page_by_path('hero-logo', OBJECT, 'post');  // hier ändern!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-                  $thumbnail_id = get_post_thumbnail_id($post->ID);
-                  $thumbnail_url = wp_get_attachment_url($thumbnail_id);
-                  $alt_text = get_post_meta($thumbnail_id, '_wp_attachment_image_alt', true);
-                ?>
+               
                 <img src="../images/about_mobil.png" alt="Nachhaltigkeitssymbole" class="visible_mobile">
                 <img src="../images/about_links.png" alt="<?php echo $alt_text ?>" class="visible_desktop">
                 <div class="text">
