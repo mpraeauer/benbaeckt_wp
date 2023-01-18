@@ -25,7 +25,7 @@ Template Name: Startseite Template
             </span>
             <span class="grid3"><span class="headerline"></span></span>
           </div>
-            <div class="mastergrid">
+            <div class="mastergrid"> 
               <?php
                 $post = get_page_by_path('brotbacken', OBJECT, 'post');
                 $thumbnail_id = get_post_thumbnail_id($post->ID);
@@ -104,7 +104,7 @@ Template Name: Startseite Template
               ?>
               <p class="super-headline"><?php echo get_post_custom_values('superheadline')[1]; ?></p>
               <h2>
-                <span class="uppercase"><?php echo get_post_custom_values('header_big_about')[0]; ?></span><br>
+                <div class="uppercase"><?php echo get_post_custom_values('header_big_about')[0]; ?></div><br>
                 <?php echo get_post_custom_values('header_small_about')[0]; ?>
               </h2>
               <?php endwhile; ?>
