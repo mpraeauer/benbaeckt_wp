@@ -104,7 +104,7 @@ Template Name: Startseite Template
               ?>
               <p class="super-headline"><?php echo get_post_custom_values('superheadline')[1]; ?></p>
               <h2>
-                <div class="uppercase"><?php echo get_post_custom_values('header_big_about')[0]; ?></div><br>
+                <span class="uppercase"><?php echo get_post_custom_values('header_big_about')[0]; ?></span><br>
                 <?php echo get_post_custom_values('header_small_about')[0]; ?>
               </h2>
               <?php endwhile; ?>

@@ -38,9 +38,9 @@ Template Name: Workshop Template
     <main>
        <section id="workshopPage">
         <div class="grid" >
-          <span class="grid1"><span class="headerline"></span></span>
-          <span class="grid2">
-            <span class="gridhelp">
+          <div class="grid1"><span class="headerline"></span></div>
+          <div class="grid2">
+            <div class="gridhelp">
               <?php
                 $workshops = new WP_Query(array('name' => 'workshoppage'));
                 if ($workshops->have_posts()) :
@@ -48,9 +48,9 @@ Template Name: Workshop Template
               ?>
               <p class="super-headline"><?php echo get_post_custom_values('superheadline')[0]; ?></p>
               <h2><?php echo get_post_custom_values('header_workshoppage')[0]; ?></h2> 
-            </span>
-          </span>
-          <span class="grid3"><span class="headerline"></span></span>
+                </div>
+                </div>
+          <div class="grid3"><span class="headerline"></span></div>
         </div>
         <p class="text"><?php echo get_post_custom_values('text_workshoppage')[0]; ?></p>
         <?php endwhile; ?>
