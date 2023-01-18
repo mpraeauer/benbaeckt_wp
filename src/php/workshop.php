@@ -16,7 +16,7 @@ Template Name: Workshop Template
   $thumbnail_id = get_post_thumbnail_id($post->ID);
   $thumbnail_url = wp_get_attachment_url($thumbnail_id);
 ?>
-<body id="workshopBackground" style="background-image:url(<?php echo $thumbnail_url ?>)"></div>
+<body id="workshopBackground" style="background-image:url(<?php echo $thumbnail_url ?>)">
 <?php wp_body_open(); ?>
     <header>
             <a href="./index.html">

@@ -16,7 +16,7 @@ Template Name: Team Template
   $thumbnail_id = get_post_thumbnail_id($post->ID);
   $thumbnail_url = wp_get_attachment_url($thumbnail_id);
 ?>
-<body id="teamBackground" style="background-image:url(<?php echo $thumbnail_url ?>)"></div>
+<body id="teamBackground" style="background-image:url(<?php echo $thumbnail_url ?>)">
 <?php wp_body_open(); ?>
     <header>
             <a href="./index.html">
@@ -38,7 +38,7 @@ Template Name: Team Template
     <main>
        <section id="teamPage">
         <div class="grid" >
-          <div class="grid1"><div class="headerline"></div></div>
+          <div class="grid1"><span class="headerline"></span></div>
           <div class="grid2">
             <div class="gridhelp">
               <?php
@@ -48,8 +48,8 @@ Template Name: Team Template
               ?>
               <p class="super-headline"><?php echo get_post_custom_values('superheadline')[0]; ?></p>
               <h2><?php echo get_post_custom_values('header_teampage')[0]; ?></h2> 
-                </div>
-                </div>
+            </div>
+          </div>
           <div class="grid3"><span class="headerline"></span></div>
         </div>
         <p class="text"><?php echo get_post_custom_values('text_teampage')[0]; ?></p>
