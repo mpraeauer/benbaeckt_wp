@@ -59,15 +59,13 @@ Template Name: Team Template
                 <?php wp_reset_postdata(); ?>
         <form>
           <?php
-              $form = wpcf7_contact_form(80);
-              if ($form){
-                $form=wpcf7_contact_form(80); // local form
-                echo $form->form;
-              }
-              else {
-                $form = wpcf7_contact_form(); // online form 
-                echo $form->form;
-              }
+            // local form
+            // $form=wpcf7_contact_form(80); 
+            // echo $form->form;
+
+            // online form 
+            $form = wpcf7_contact_form(13); 
+            echo $form->form;
           ?>
         </form>
       </section>
