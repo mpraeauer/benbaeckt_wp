@@ -8,9 +8,9 @@ Template Name: Startseite Template
     <main>
         <section id="workshop">
           <div class="grid" >
-            <span class="grid1"><span class="headerline"></span></span>
-            <span class="grid2">
-              <span class="gridhelp">
+            <div class="grid1"><div class="headerline"></div></div>
+            <div class="grid2">
+              <div class="gridhelp">
               <?php
                 $startseite = new WP_Query(array('name' => 'startseite'));
                 if ($startseite->have_posts()) :
@@ -21,9 +21,9 @@ Template Name: Startseite Template
               <?php endwhile; ?>
               <?php endif; ?>
               <?php wp_reset_postdata(); ?>
-              </span>
-            </span>
-            <span class="grid3"><span class="headerline"></span></span>
+              </div>
+            </div>
+            <div class="grid3"><div class="headerline"></div></div>
           </div>
             <div class="mastergrid"> 
               <?php
@@ -94,9 +94,9 @@ Template Name: Startseite Template
         </section>
         <section id="about">
           <div class="grid" >
-            <span class="grid1"><span class="headerline"></span></span>
-            <span class="grid2">
-              <span class="gridhelp">
+            <div class="grid1"><div class="headerline"></div></div>
+            <div class="grid2">
+              <div class="gridhelp">
               <?php
                 $startseite = new WP_Query(array('name' => 'startseite'));
                 if ($startseite->have_posts()) :
@@ -110,9 +110,9 @@ Template Name: Startseite Template
               <?php endwhile; ?>
               <?php endif; ?>
               <?php wp_reset_postdata(); ?>
-              </span>
-            </span>
-            <span class="grid3"><span class="headerline"></span></span>
+                </div>
+            </div>
+            <div class="grid3"><div class="headerline"></div></div>
           </div>
             <div class="container">
                 <?php
@@ -153,9 +153,9 @@ Template Name: Startseite Template
         </section>
         <section id="team">
           <div class="grid" >
-            <span class="grid1"><span class="headerline"></span></span>
-            <span class="grid2">
-              <span class="gridhelp">
+            <div class="grid1"><div class="headerline"></div></div>
+            <div class="grid2">
+              <div class="gridhelp">
               <?php
                 $startseite = new WP_Query(array('name' => 'startseite'));
                 if ($startseite->have_posts()) :
@@ -166,9 +166,9 @@ Template Name: Startseite Template
               <?php endwhile; ?>
               <?php endif; ?>
               <?php wp_reset_postdata(); ?>
-              </span>
-            </span>
-            <span class="grid3"><span class="headerline"></span></span>
+              </div>
+            </div>
+            <div class="grid3"><div class="headerline"></div></div>
           </div>
             <div class="container">
             <?php
