@@ -13,9 +13,10 @@
             display: block;
         }
 
-        ul {
+        .menu {
             display: flex;
             justify-content: center;
+            align-items: center;
             position: fixed;
             box-shadow: -5px 0 10px 0 rgb(0 0 0 / 0.1);
             background-color: #654F3C;

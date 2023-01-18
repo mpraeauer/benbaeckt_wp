@@ -1,16 +1,17 @@
-# Aaron G. Miller's website
+# Ben's website
+
+This wordpress website was edited so that Ben can change and exchange his texts and images, 
+but not that this theme is taken for other websites, because many points can not be 
+changed via the dashboard.  
 
 
 ## Webdev-Dependencies
 `npm install`
  
 ## Live server / browser syncing
-`npx browser-sync dist -w`
+We can use here `node build.js`
 
-### Please note when using browser-sync
-On Windows only `build.sh` on/after save will work with browser-sync. So only use clean-build.sh before you deploy.  
-On MacOs you can always use clean-build.sh.
-
+Or if that doesn't work: `npx browser-sync dist -w`
 
 
 ## Build
@@ -21,11 +22,5 @@ Run `./build` to
 * copy the `/images'-folder
 * ...
 
-
-### Clean Build
-Run `./clean-build` to build a new dist-folder from scratch.
-
-
-## Deploy with netlify
-If you only need a static site and set up netlify, simply push to main, which then automatically triggers a new deployment.
-
+# Deploy
+We can use here `dep deploy`
